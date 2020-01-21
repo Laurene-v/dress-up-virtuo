@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS/HTML Workshop with govirtuo.com</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  
+  
+  
+  <body>
+
+    <img src="VIRTUO_logo.png" class="rounded mx-auto d-block" alt="Virtuo Logo" > 
+
+    <div id="car">
+      <input class="js-name form-group rounded-left border border-secondary w-25 h-25 p-3" style="background-color: rgb(245, 252, 252);" type="text" placeholder="Car name" />
+      <input class="js-price-by-day form-group rounded-0 border border-secondary w-25 h-25 p-3" style="background-color: rgb(245, 252, 252);" type="number" placeholder="Price by day"/>
+      <input class="js-price-by-km form-group rounded-right border border-secondary w-25 h-25 p-3" style="background-color: rgb(245, 252, 252);" type="number" placeholder="Price by km"/>
+      
+    </div>
+
+    <div id="rental">
+      <input class="js-name rounded-left border-secondary w-25 h-25 p-3" style="background-color: rgb(217, 245, 245);" type="text" placeholder="Driver name"/>
+      <input class="js-begin rounded-0 border-secondary w-25 h-25 p-3" style="background-color: rgb(217, 245, 245);" type="date" placeholder="Rental begin date"/>
+      <input class="js-end rounded-right border-secondary w-25 h-25 p-3" style="background-color: rgb(217, 245, 245);" type="date" placeholder="Rental end date"/>
+      <input class="js-distance rounded border-secondary w-25 h-25 p-3" style="background-color: rgb(175, 228, 228);" type="number" placeholder="Distance in km"/>
+      <label class="form-check-label" style="font: 1em sans-serif; color: rgb(0, 3, 201);" for="Check1">Deductible option  : </label>
+      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+    <!--thereis a progression of the color because the closer the person fills in the blanks, the closer it is to the end, so to the "Compute" button (and its color)-->
+    </div>
+    
+    <button type="button" id="compute" class="btn btn-info btn-block" style="background-color:rgb(110, 162, 168);">Compute</button>
+    <!--the color chosen is the same as the color that we can see on their website-->
+    <div id="actors"></div>
+
+
+    <script src="virtuo.js"></script>
+    <script src="index.js"></script>
+    
+    
+  </body>
+</html>
